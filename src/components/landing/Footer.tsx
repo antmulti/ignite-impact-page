@@ -1,4 +1,5 @@
-import { Flame, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,11 +13,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="md:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-4">
-              <Flame className="w-8 h-8 text-primary" />
-              <span className="font-bold text-xl text-foreground">
-                Ignite<span className="text-primary">Digital</span>
-              </span>
+            <a href="#" className="flex items-center mb-4">
+              <img 
+                src={logo} 
+                alt="Ignite Digital" 
+                className="h-10 w-auto"
+              />
             </a>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Tráfego pago de alta performance + consultoria de processos de vendas. 
