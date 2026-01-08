@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Flame, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,14 +10,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="relative">
-            <Flame className="w-8 h-8 text-primary transition-all duration-300 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-          </div>
-          <span className="font-bold text-xl text-foreground">
-            Ignite<span className="text-primary">Digital</span>
-          </span>
+        <a href="#" className="flex items-center group">
+          <img 
+            src={logo} 
+            alt="Ignite Digital" 
+            className="h-10 w-auto transition-all duration-300 group-hover:scale-105"
+          />
         </a>
 
         {/* Desktop Navigation */}
