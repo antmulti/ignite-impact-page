@@ -1,4 +1,4 @@
-import { CheckCircle, Linkedin, Instagram } from "lucide-react";
+import { CheckCircle, Instagram } from "lucide-react";
 import andreVictor from "@/assets/andre-victor.jpg";
 
 const credentials = [
@@ -91,14 +91,6 @@ const AuthoritySection = () => {
                   className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-all"
                 >
                   <Instagram className="w-5 h-5" />
-                </a>
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-all"
-                >
-                  <Linkedin className="w-5 h-5" />
                 </a>
               </div>
             </div>

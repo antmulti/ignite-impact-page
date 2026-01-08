@@ -1,4 +1,4 @@
-import { Flame, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Flame, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,14 +30,6 @@ const Footer = () => {
                 className="w-10 h-10 rounded-lg bg-background border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-all"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-background border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-all"
-              >
-                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
